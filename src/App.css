@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.card-width {
+  width: 650px;
+}
+.background-banner {
+  background-image: url('https://i.ibb.co/f0XGSfB/Rectangle-2.png');
+  background-size: cover;
+  height: 440px;
+}
+
+.background-banner::before{
+  background-color: rgba(0, 0, 0, 0.37);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.banner-title{
+  position: relative;
+}
+.banner-text{
+  position: absolute;
+  top: 300px;
+  left: 200px;
+}
+
+@media (min-width: 359px) and (max-width: 414px) {
+  .card-width {
+    width: 100%;
+  }
+  .background-banner {
+    background-image: url('https://i.ibb.co/SyYB4dY/Rectangle-2-1.png');
+    background-position: center;
+    background-size: cover;
+    height: 236px;
+  }
+  .banner-title{
+    position: relative;
+  }
+  .banner-text{
+    position: absolute;
+    top: 164px;
+    left: 16px;
+  }
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
